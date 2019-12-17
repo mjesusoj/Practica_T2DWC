@@ -39,7 +39,7 @@ function agregarLinea() {
     div.className = "alert alert-danger";
     // Añadir atributo role
     div.setAttribute("role", "alert");
-    // Guardar en el div creado la fecha y la hora
+    // Guardar en el div creado la fecha y la hora actual
     div.innerHTML = "Fecha y Hora de la actualización:  <br/>" + fecha.getDate() + "/" + fecha.getDay() + "/" + fecha.getFullYear() + " " + fecha.getHours() + ":" + fecha.getMinutes();
     // Añadir debajo de la tabla la fecha de actualización
     document.body.appendChild(div);
