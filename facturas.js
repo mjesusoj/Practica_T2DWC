@@ -34,13 +34,13 @@ function agregarLinea() {
     total.innerHTML = total_Factura.toFixed(2); 
 
     // Guardar en fecha los datos que ofrece la clase Date()
-    let fecha = Date();
+    let fecha = new Date();
     // Añadir un atributo class
     div.className = "alert alert-danger";
     // Añadir atributo role
     div.setAttribute("role", "alert");
     // Guardar en el div creado la fecha y la hora
-    div.innerHTML = "Fecha y Hora de la actualización:  <br/>" + fecha;
+    div.innerHTML = "Fecha y Hora de la actualización:  <br/>" + fecha.getDate() + "/" + fecha.getDay() + "/" + fecha.getFullYear() + " " + fecha.getHours() + ":" + fecha.getMinutes();
     // Añadir debajo de la tabla la fecha de actualización
     document.body.appendChild(div);
 }
